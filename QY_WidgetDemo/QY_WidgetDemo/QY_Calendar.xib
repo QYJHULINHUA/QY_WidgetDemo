@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QY_Calendar">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smB-5x-Pgk">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13a-wO-DLy">
+                            <rect key="frame" x="5" y="2" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="VWq-zi-B2H"/>
+                                <constraint firstAttribute="height" constant="40" id="uGP-mJ-b3y"/>
+                            </constraints>
+                            <state key="normal" image="left"/>
+                            <connections>
+                                <action selector="leftBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="shK-Qc-p3r"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoM-Jn-uv8">
+                            <rect key="frame" x="555" y="2" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="PH8-NY-O1U"/>
+                                <constraint firstAttribute="width" constant="40" id="pid-r3-Wop"/>
+                            </constraints>
+                            <state key="normal" image="right"/>
+                            <connections>
+                                <action selector="rightBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Md8-Lz-Tgc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx2-WS-dbn">
+                            <rect key="frame" x="65" y="5" width="470" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.63931435029999995" green="1" blue="0.52109888979999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="zoM-Jn-uv8" firstAttribute="top" secondItem="smB-5x-Pgk" secondAttribute="top" constant="2" id="0mB-4M-K54"/>
+                        <constraint firstItem="lx2-WS-dbn" firstAttribute="top" secondItem="smB-5x-Pgk" secondAttribute="top" constant="5" id="6iv-IU-QPA"/>
+                        <constraint firstItem="13a-wO-DLy" firstAttribute="leading" secondItem="smB-5x-Pgk" secondAttribute="leading" constant="5" id="RHa-vh-YtN"/>
+                        <constraint firstItem="zoM-Jn-uv8" firstAttribute="leading" secondItem="lx2-WS-dbn" secondAttribute="trailing" constant="20" id="YOg-m9-LpW"/>
+                        <constraint firstAttribute="height" constant="44" id="YTX-fj-YUI"/>
+                        <constraint firstAttribute="trailing" secondItem="zoM-Jn-uv8" secondAttribute="trailing" constant="5" id="ag4-ew-dGb"/>
+                        <constraint firstItem="lx2-WS-dbn" firstAttribute="leading" secondItem="13a-wO-DLy" secondAttribute="trailing" constant="20" id="e8M-rV-xdG"/>
+                        <constraint firstAttribute="bottom" secondItem="lx2-WS-dbn" secondAttribute="bottom" constant="5" id="r7b-Sp-56j"/>
+                        <constraint firstItem="13a-wO-DLy" firstAttribute="top" secondItem="smB-5x-Pgk" secondAttribute="top" constant="2" id="rNr-FO-gRl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="smB-5x-Pgk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W66-pw-HMY"/>
+                <constraint firstAttribute="trailing" secondItem="smB-5x-Pgk" secondAttribute="trailing" id="ct8-zC-Pha"/>
+                <constraint firstItem="smB-5x-Pgk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ssV-wg-5Rx"/>
+            </constraints>
+            <connections>
+                <outlet property="dataLabell" destination="lx2-WS-dbn" id="1ON-Zi-9CK"/>
+            </connections>
+            <point key="canvasLocation" x="495" y="242"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left" width="32" height="32"/>
+        <image name="right" width="32" height="32"/>
+    </resources>
+</document>

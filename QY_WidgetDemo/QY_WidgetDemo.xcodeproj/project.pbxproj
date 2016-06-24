@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990CDFE61D1BCEF100A61965 /* QY_Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 990CDFE51D1BCEF100A61965 /* QY_Calendar.m */; };
+		990CDFE71D1BCEF100A61965 /* QY_Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 990CDFE51D1BCEF100A61965 /* QY_Calendar.m */; };
+		990CDFE91D1BE44300A61965 /* QY_Calendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990CDFE81D1BE44300A61965 /* QY_Calendar.xib */; };
+		990CDFEA1D1BE44300A61965 /* QY_Calendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990CDFE81D1BE44300A61965 /* QY_Calendar.xib */; };
 		99BE4ADB1D1BAC4600E5BAA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4ADA1D1BAC4600E5BAA2 /* main.m */; };
 		99BE4ADE1D1BAC4700E5BAA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4ADD1D1BAC4700E5BAA2 /* AppDelegate.m */; };
 		99BE4AE11D1BAC4700E5BAA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4AE01D1BAC4700E5BAA2 /* ViewController.m */; };
@@ -15,6 +19,9 @@
 		99BE4AE91D1BAC4700E5BAA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE4AE71D1BAC4700E5BAA2 /* LaunchScreen.storyboard */; };
 		99BE4AF41D1BAC4700E5BAA2 /* QY_WidgetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4AF31D1BAC4700E5BAA2 /* QY_WidgetDemoTests.m */; };
 		99BE4AFF1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4AFE1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests.m */; };
+		99BE4B271D1BB0DA00E5BAA2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BE4B261D1BB0DA00E5BAA2 /* NotificationCenter.framework */; };
+		99BE4B2B1D1BB0DA00E5BAA2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4B2A1D1BB0DA00E5BAA2 /* TodayViewController.m */; };
+		99BE4B321D1BB0DA00E5BAA2 /* Calendar.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99BE4B241D1BB0DA00E5BAA2 /* Calendar.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +39,33 @@
 			remoteGlobalIDString = 99BE4AD51D1BAC4600E5BAA2;
 			remoteInfo = QY_WidgetDemo;
 		};
+		99BE4B301D1BB0DA00E5BAA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99BE4ACE1D1BAC4600E5BAA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99BE4B231D1BB0DA00E5BAA2;
+			remoteInfo = Calendar;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		99BE4B361D1BB0DA00E5BAA2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99BE4B321D1BB0DA00E5BAA2 /* Calendar.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		990CDFE41D1BCEF100A61965 /* QY_Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QY_Calendar.h; sourceTree = "<group>"; };
+		990CDFE51D1BCEF100A61965 /* QY_Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QY_Calendar.m; sourceTree = "<group>"; };
+		990CDFE81D1BE44300A61965 /* QY_Calendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QY_Calendar.xib; sourceTree = "<group>"; };
 		99BE4AD61D1BAC4600E5BAA2 /* QY_WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QY_WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE4ADA1D1BAC4600E5BAA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99BE4ADC1D1BAC4700E5BAA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +82,11 @@
 		99BE4AFA1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QY_WidgetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE4AFE1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QY_WidgetDemoUITests.m; sourceTree = "<group>"; };
 		99BE4B001D1BAC4700E5BAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99BE4B241D1BB0DA00E5BAA2 /* Calendar.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Calendar.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BE4B261D1BB0DA00E5BAA2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		99BE4B291D1BB0DA00E5BAA2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		99BE4B2A1D1BB0DA00E5BAA2 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		99BE4B2F1D1BB0DA00E5BAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +111,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99BE4B211D1BB0DA00E5BAA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BE4B271D1BB0DA00E5BAA2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +128,8 @@
 				99BE4AD81D1BAC4600E5BAA2 /* QY_WidgetDemo */,
 				99BE4AF21D1BAC4700E5BAA2 /* QY_WidgetDemoTests */,
 				99BE4AFD1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests */,
+				99BE4B281D1BB0DA00E5BAA2 /* Calendar */,
+				99BE4B251D1BB0DA00E5BAA2 /* Frameworks */,
 				99BE4AD71D1BAC4600E5BAA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +140,7 @@
 				99BE4AD61D1BAC4600E5BAA2 /* QY_WidgetDemo.app */,
 				99BE4AEF1D1BAC4700E5BAA2 /* QY_WidgetDemoTests.xctest */,
 				99BE4AFA1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests.xctest */,
+				99BE4B241D1BB0DA00E5BAA2 /* Calendar.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +152,9 @@
 				99BE4ADD1D1BAC4700E5BAA2 /* AppDelegate.m */,
 				99BE4ADF1D1BAC4700E5BAA2 /* ViewController.h */,
 				99BE4AE01D1BAC4700E5BAA2 /* ViewController.m */,
+				990CDFE41D1BCEF100A61965 /* QY_Calendar.h */,
+				990CDFE51D1BCEF100A61965 /* QY_Calendar.m */,
+				990CDFE81D1BE44300A61965 /* QY_Calendar.xib */,
 				99BE4AE21D1BAC4700E5BAA2 /* Main.storyboard */,
 				99BE4AE51D1BAC4700E5BAA2 /* Assets.xcassets */,
 				99BE4AE71D1BAC4700E5BAA2 /* LaunchScreen.storyboard */,
@@ -140,6 +190,24 @@
 			path = QY_WidgetDemoUITests;
 			sourceTree = "<group>";
 		};
+		99BE4B251D1BB0DA00E5BAA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99BE4B261D1BB0DA00E5BAA2 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99BE4B281D1BB0DA00E5BAA2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				99BE4B291D1BB0DA00E5BAA2 /* TodayViewController.h */,
+				99BE4B2A1D1BB0DA00E5BAA2 /* TodayViewController.m */,
+				99BE4B2F1D1BB0DA00E5BAA2 /* Info.plist */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +218,12 @@
 				99BE4AD21D1BAC4600E5BAA2 /* Sources */,
 				99BE4AD31D1BAC4600E5BAA2 /* Frameworks */,
 				99BE4AD41D1BAC4600E5BAA2 /* Resources */,
+				99BE4B361D1BB0DA00E5BAA2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				99BE4B311D1BB0DA00E5BAA2 /* PBXTargetDependency */,
 			);
 			name = QY_WidgetDemo;
 			productName = QY_WidgetDemo;
@@ -196,6 +266,23 @@
 			productReference = 99BE4AFA1D1BAC4700E5BAA2 /* QY_WidgetDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		99BE4B231D1BB0DA00E5BAA2 /* Calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99BE4B351D1BB0DA00E5BAA2 /* Build configuration list for PBXNativeTarget "Calendar" */;
+			buildPhases = (
+				99BE4B201D1BB0DA00E5BAA2 /* Sources */,
+				99BE4B211D1BB0DA00E5BAA2 /* Frameworks */,
+				99BE4B221D1BB0DA00E5BAA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calendar;
+			productName = Calendar;
+			productReference = 99BE4B241D1BB0DA00E5BAA2 /* Calendar.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,6 +303,9 @@
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 99BE4AD51D1BAC4600E5BAA2;
 					};
+					99BE4B231D1BB0DA00E5BAA2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 99BE4AD11D1BAC4600E5BAA2 /* Build configuration list for PBXProject "QY_WidgetDemo" */;
@@ -234,6 +324,7 @@
 				99BE4AD51D1BAC4600E5BAA2 /* QY_WidgetDemo */,
 				99BE4AEE1D1BAC4700E5BAA2 /* QY_WidgetDemoTests */,
 				99BE4AF91D1BAC4700E5BAA2 /* QY_WidgetDemoUITests */,
+				99BE4B231D1BB0DA00E5BAA2 /* Calendar */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +337,7 @@
 				99BE4AE91D1BAC4700E5BAA2 /* LaunchScreen.storyboard in Resources */,
 				99BE4AE61D1BAC4700E5BAA2 /* Assets.xcassets in Resources */,
 				99BE4AE41D1BAC4700E5BAA2 /* Main.storyboard in Resources */,
+				990CDFE91D1BE44300A61965 /* QY_Calendar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +355,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99BE4B221D1BB0DA00E5BAA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990CDFEA1D1BE44300A61965 /* QY_Calendar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -273,6 +373,7 @@
 				99BE4AE11D1BAC4700E5BAA2 /* ViewController.m in Sources */,
 				99BE4ADE1D1BAC4700E5BAA2 /* AppDelegate.m in Sources */,
 				99BE4ADB1D1BAC4600E5BAA2 /* main.m in Sources */,
+				990CDFE61D1BCEF100A61965 /* QY_Calendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +393,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99BE4B201D1BB0DA00E5BAA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BE4B2B1D1BB0DA00E5BAA2 /* TodayViewController.m in Sources */,
+				990CDFE71D1BCEF100A61965 /* QY_Calendar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +414,11 @@
 			isa = PBXTargetDependency;
 			target = 99BE4AD51D1BAC4600E5BAA2 /* QY_WidgetDemo */;
 			targetProxy = 99BE4AFB1D1BAC4700E5BAA2 /* PBXContainerItemProxy */;
+		};
+		99BE4B311D1BB0DA00E5BAA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99BE4B231D1BB0DA00E5BAA2 /* Calendar */;
+			targetProxy = 99BE4B301D1BB0DA00E5BAA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +592,28 @@
 			};
 			name = Release;
 		};
+		99BE4B331D1BB0DA00E5BAA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Calendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ihefe.QY-WidgetDemo.Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		99BE4B341D1BB0DA00E5BAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Calendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ihefe.QY-WidgetDemo.Calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +633,7 @@
 				99BE4B051D1BAC4700E5BAA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99BE4B061D1BAC4700E5BAA2 /* Build configuration list for PBXNativeTarget "QY_WidgetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +642,7 @@
 				99BE4B081D1BAC4700E5BAA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99BE4B091D1BAC4700E5BAA2 /* Build configuration list for PBXNativeTarget "QY_WidgetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +651,16 @@
 				99BE4B0B1D1BAC4700E5BAA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99BE4B351D1BB0DA00E5BAA2 /* Build configuration list for PBXNativeTarget "Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BE4B331D1BB0DA00E5BAA2 /* Debug */,
+				99BE4B341D1BB0DA00E5BAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
