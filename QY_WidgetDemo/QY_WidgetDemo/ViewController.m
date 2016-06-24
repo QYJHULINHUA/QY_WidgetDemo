@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "QY_Calendar.h"
+
 
 @interface ViewController ()
 {
@@ -22,8 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    QY_Calendar *calendar = [QY_Calendar getQY_CalendarViewOnView:self.view frame:CGRectMake(0, 100, self.view.frame.size.width, 352)];
-    self.view.backgroundColor = [UIColor redColor];
+    
+
 }
 
 

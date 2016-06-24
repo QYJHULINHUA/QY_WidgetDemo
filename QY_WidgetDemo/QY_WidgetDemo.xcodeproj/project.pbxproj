@@ -11,6 +11,8 @@
 		990CDFE71D1BCEF100A61965 /* QY_Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 990CDFE51D1BCEF100A61965 /* QY_Calendar.m */; };
 		990CDFE91D1BE44300A61965 /* QY_Calendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990CDFE81D1BE44300A61965 /* QY_Calendar.xib */; };
 		990CDFEA1D1BE44300A61965 /* QY_Calendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 990CDFE81D1BE44300A61965 /* QY_Calendar.xib */; };
+		990CDFEC1D1CFE1300A61965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990CDFEB1D1CFE1300A61965 /* Assets.xcassets */; };
+		990CDFED1D1CFE1300A61965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990CDFEB1D1CFE1300A61965 /* Assets.xcassets */; };
 		99BE4ADB1D1BAC4600E5BAA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4ADA1D1BAC4600E5BAA2 /* main.m */; };
 		99BE4ADE1D1BAC4700E5BAA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4ADD1D1BAC4700E5BAA2 /* AppDelegate.m */; };
 		99BE4AE11D1BAC4700E5BAA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BE4AE01D1BAC4700E5BAA2 /* ViewController.m */; };
@@ -66,6 +68,7 @@
 		990CDFE41D1BCEF100A61965 /* QY_Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QY_Calendar.h; sourceTree = "<group>"; };
 		990CDFE51D1BCEF100A61965 /* QY_Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QY_Calendar.m; sourceTree = "<group>"; };
 		990CDFE81D1BE44300A61965 /* QY_Calendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QY_Calendar.xib; sourceTree = "<group>"; };
+		990CDFEB1D1CFE1300A61965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = QY_WidgetDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		99BE4AD61D1BAC4600E5BAA2 /* QY_WidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QY_WidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE4ADA1D1BAC4600E5BAA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99BE4ADC1D1BAC4700E5BAA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,6 +204,7 @@
 		99BE4B281D1BB0DA00E5BAA2 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				990CDFEB1D1CFE1300A61965 /* Assets.xcassets */,
 				99BE4B291D1BB0DA00E5BAA2 /* TodayViewController.h */,
 				99BE4B2A1D1BB0DA00E5BAA2 /* TodayViewController.m */,
 				99BE4B2F1D1BB0DA00E5BAA2 /* Info.plist */,
@@ -338,6 +342,7 @@
 				99BE4AE61D1BAC4700E5BAA2 /* Assets.xcassets in Resources */,
 				99BE4AE41D1BAC4700E5BAA2 /* Main.storyboard in Resources */,
 				990CDFE91D1BE44300A61965 /* QY_Calendar.xib in Resources */,
+				990CDFEC1D1CFE1300A61965 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990CDFED1D1CFE1300A61965 /* Assets.xcassets in Resources */,
 				990CDFEA1D1BE44300A61965 /* QY_Calendar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "QY_Calendar.h"
 
 @interface TodayViewController () <NCWidgetProviding>
 
@@ -18,10 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    int y = (arc4random() % 201) + 200;
-    
-    self.preferredContentSize = CGSizeMake(0, y);
+    [QY_Calendar getQY_CalendarViewOnView:self.view frame:CGRectMake(0, 0, self.view.frame.size.width, 352)];
+    self.preferredContentSize = CGSizeMake(0, 352);
     // Do any additional setup after loading the view from its nib.
 }
 

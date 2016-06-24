@@ -87,10 +87,9 @@
     _collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor whiteColor];
     [_collectionView registerClass:[QY_CalendarCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
     [self addSubview:_collectionView];
-    
+    _collectionView.backgroundColor = [UIColor clearColor];
     _dataLabell.text = [NSString stringWithFormat:@"%.2ld-%ld",[self month:datee],[self year:datee]];
     
 }
